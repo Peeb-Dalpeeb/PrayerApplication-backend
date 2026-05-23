@@ -1,8 +1,8 @@
 require("dotenv").config();
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const Activity = require("./models/Activity"); // Import our blueprint
+import express from "express";
+import mongoose from "mongoose";
+import cors from "cors";
+import Activity from "./models/Activity";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
