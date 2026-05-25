@@ -1,4 +1,4 @@
-require("dotenv").config();
+import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -7,10 +7,12 @@ import Activity from "./models/Activity";
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+dotenv.config();
+
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://prayerapplication.vercel.app"], // The URL from your screenshot
+    origin: ["http://localhost:5173", "https://prayerapplication.vercel.app"],
     methods: ["GET", "POST", "DELETE"],
     credentials: true,
   }),
