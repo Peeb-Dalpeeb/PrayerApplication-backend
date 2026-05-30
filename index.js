@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import Activity from "./models/Activity";
+import Activity from "./models/Activity.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;

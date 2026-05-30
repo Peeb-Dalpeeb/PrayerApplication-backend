@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 // 1. Define the Blueprint (Schema)
 const activitySchema = new mongoose.Schema({
@@ -25,4 +25,4 @@ const activitySchema = new mongoose.Schema({
 // 2. Build the Model and export it
 const Activity = mongoose.model("Activity", activitySchema);
 
-module.exports = Activity;
+export default Activity;
